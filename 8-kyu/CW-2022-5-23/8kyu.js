@@ -45,4 +45,6 @@ function abbrevName(name) {
   var nameArray = name.split(" ");
   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 }
+
+// We need a simple function that determines if a plural is needed or not. It should take a number, and return true if a plural should be used with that number or false if not. This would be useful when printing out a string such as 5 minutes, 14 apples, or 1 sun.
 let plural = (n) => (n > 1 || n === Infinity || n < 1 ? true : false);
