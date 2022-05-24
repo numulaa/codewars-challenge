@@ -77,3 +77,15 @@ function sumArray(array) {
     ? array.reduce((s, n) => s + n, 0) - Math.min(...array) - Math.max(...array)
     : 0;
 }
+
+//fake binary
+//if the number from the string < 5 return 0, > 5 return 1
+
+function fakeBin(x) {
+  return x
+    .split("")
+    .map((n) => (n < 5 ? 0 : 1))
+    .join("");
+}
+//invert values, positive to negative and vice versa
+let invert = (array) => array.map((x) => (x >= 0 ? -x : Math.abs(x)));
