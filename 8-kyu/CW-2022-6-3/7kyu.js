@@ -12,3 +12,9 @@ function stray(numbers) {
     return 0;
   }
 }
+//alternative way
+function stray(nums) {
+  let max = Math.max(...nums);
+  let min = Math.min(...nums);
+  return nums.filter((x) => x == max).length == 1 ? max : min;
+}
