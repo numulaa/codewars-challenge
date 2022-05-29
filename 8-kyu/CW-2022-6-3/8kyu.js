@@ -25,3 +25,13 @@ let powersOfTwo = (n) =>
 
 // The returned value must be a string, and have "***" between each of its letters.
 let twoSort = (s) => s.sort()[0].split("").join("***");
+
+//first nonn--consecutive number
+function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length - 1; ++i) {
+    if (arr[i] + 1 !== arr[i + 1]) {
+      return arr[i + 1];
+    }
+  }
+  return null;
+}
