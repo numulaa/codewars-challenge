@@ -20,3 +20,6 @@ function getRealFloor(n) {
 // name equals owner =>	'Hello boss'
 // otherwise =>	'Hello guest'
 let greet = (name, owner) => (name === owner ? "Hello boss" : "Hello guest");
+
+//check  if a 'factor' is factor of the 'base'
+let checkForFactor = (base, factor) => base % factor === 0;
