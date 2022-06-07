@@ -27,3 +27,11 @@ function greet(language) {
     ? greetings[language]
     : greetings["english"];
 }
+
+//clock
+// Your task is to write a function which returns the time since midnight in milliseconds.
+// h = 0
+// m = 1
+// s = 1
+// result = 61000
+let past = (h, m, s) => (h * 3600 + m * 60 + s) * 1000;

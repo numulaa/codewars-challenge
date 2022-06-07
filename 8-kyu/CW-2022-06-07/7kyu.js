@@ -10,3 +10,8 @@ const binaryArrayToNumber = (arr) => {
 function binaryArrayToNumber(arr) {
   return arr.reduce((a, b) => (a << 1) | b);
 }
+
+//sort numbers
+// solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
+// solution(null); // should return []
+const solution = (nums) => (!nums ? [] : nums.sort((a, b) => a - b));
