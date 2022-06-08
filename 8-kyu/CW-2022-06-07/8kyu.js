@@ -35,3 +35,17 @@ function greet(language) {
 // s = 1
 // result = 61000
 let past = (h, m, s) => (h * 3600 + m * 60 + s) * 1000;
+
+//return how many 'letter' in the 'str'
+//("Hello", "o")  ==>  1
+// ("Hello", "l")  ==>  2
+// ("", "z")       ==>  0
+let strCount = (str, letter) =>
+  str.split("").filter((elem) => elem === letter).length;
+
+//expressions matter
+//return the largest result of combinations
+function expressionMatter(a, b, c) {
+  let arr = [a * (b + c), a * b * c, a + b * c, (a + b) * c, a + b + c];
+  return Math.max(...arr); // highest achievable result
+}
