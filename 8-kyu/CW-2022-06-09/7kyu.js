@@ -11,3 +11,21 @@ let isAnagram = function (test, original) {
     return false;
   }
 };
+//this ismore simpler beacuse we just need to shange it back to string with join(')
+let isAnagram = function (test, original) {
+  let t = test.toLowerCase().split("").sort().join("");
+  let o = original.toLowerCase().split("").sort().join("");
+  return t == o ? true : false; //then compare it
+};
+//Find the capitals
+// Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
+let capitals = function (word) {
+  // Write your code here
+  let result = [];
+  for (let i = 0; i < word.length; i++) {
+    if (word.charAt(i).toUpperCase() === word.charAt(i)) {
+      result.push(i);
+    }
+  }
+  return result;
+};
