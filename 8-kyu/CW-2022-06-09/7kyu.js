@@ -29,3 +29,41 @@ let capitals = function (word) {
   }
   return result;
 };
+
+//using map()
+let capitals = function (word) {
+  return word
+    .split("")
+    .map((l, i) => (l.toUpperCase() === l ? i : null)) //to check if the elemen (l) is uppercase or not and make a new array of the indexes
+    .filter((i) => i != null); //to get the array of the index where the charactesrs are uppercase
+};
+
+//Round up to the next multiple of 5
+// input:    output:
+// 0    ->   0
+// 2    ->   5
+// 3    ->   5
+// 12   ->   15
+// 21   ->   25
+// 30   ->   30
+// -2   ->   0
+// -5   ->   -5
+// etc.
+function roundToNext5(n) {
+  // ...
+  if (n % 5 === 0) {
+    return n;
+  } else if (n % 5 === n && n > 0) {
+    return n + (5 - n);
+  } else if (n % 5 === n && n < 0) {
+    return 0;
+  } else if (n % 5 !== 0 && n < 0) {
+    return n - (n % 5);
+  } else if (n % 5 !== 0) {
+    return n + (5 - (n % 5));
+  }
+}
+//using Math.ceil()
+function roundToNext5(n) {
+  return Math.ceil(n / 5) * 5;
+}
