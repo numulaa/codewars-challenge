@@ -10,6 +10,6 @@ let gimme = (triplet) =>
     (elem) => elem > Math.min(...triplet) && elem < Math.max(...triplet)
   );
 //this works the same
-const gimme = function (arr) {
+const gimm = function (arr) {
   return arr.indexOf([...arr].sort((x, y) => x > y)[1]);
 };

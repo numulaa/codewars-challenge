@@ -34,3 +34,19 @@ function stairsIn20(a) {
 // ("22", "1") --> "1221"
 //('Soon', 'Me'), 'MeSoonMe'
 let solution = (a, b) => (a.length > b.length ? b + a + b : a + b + a);
+
+//remove one of the axclamation marks
+// remove("Hi!") === "Hi"
+// remove("Hi!!!") === "Hi!!"
+// remove("!Hi") === "!Hi"
+// remove("!Hi!") === "!Hi"
+// remove("Hi! Hi!") === "Hi! Hi"
+// remove("Hi") === "Hi"
+let remove = (string) =>
+  string[string.length - 1] === "!"
+    ? string.slice(0, string.length - 1)
+    : string;
+//this worksthe same
+function remove(s) {
+  return s.charAt(s.length - 1) == "!" ? s.substr(0, s.length - 1) : s;
+}
