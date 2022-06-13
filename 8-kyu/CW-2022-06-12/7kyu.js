@@ -27,8 +27,8 @@ let getSum = (a, b) => {
     for (let i = a; i <= b; i++) {
       arr.push(i);
     }
-    return arr.reduce((acc, curr) => acc + curr); //if a > b the loop should start from b
-  } else if (a !== b && a > b) {
+    return arr.reduce((acc, curr) => acc + curr); 
+  } else if (a !== b && a > b) {//if a > b the loop should start from b
     for (let i = b; i <= a; i++) {
       arr.push(i);
     }
