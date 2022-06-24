@@ -27,11 +27,3 @@ function flattenAndSort(array) {
 function smallEnough(a, limit) {
   return a.filter((elem) => elem <= limit).length === a.length;
 }
-
-//Convert to Binary
-//toBinary(2), 10
-//toBinary(1), 1
-//toBinary(5), 101
-function toBinary(n) {
-  return Number(n.toString(2));
-}
