@@ -8,3 +8,20 @@
 function returnTheLastIndex(arr) {
   return arr.length !== 0 && arr.includes(1) ? arr.lastIndexOf(1) : 0;
 }
+
+//L1: Bartender, drinks!
+function getDrinkByProfession(param) {
+  const drinks = {
+    jabroni: "Patron Tequila",
+    "school counselor": "Anything with Alcohol",
+    programmer: "Hipster Craft Beer",
+    "bike gang member": "Moonshine",
+    politician: "Your tax dollars",
+    rapper: "Cristal",
+  };
+  if (drinks.hasOwnProperty(param.toLowerCase())) {
+    return drinks[param.toLowerCase()];
+  } else {
+    return "Beer";
+  }
+}
