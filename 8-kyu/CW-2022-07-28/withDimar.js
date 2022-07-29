@@ -1,6 +1,6 @@
-function amIWilson(p) {
-  // check if prime is Wilson
-}
+// function amIWilson(p) {
+//   // check if prime is Wilson
+// }
 //Not yet solved
 // function amIWilson(p) {
 //   // check if prime is Wilson
